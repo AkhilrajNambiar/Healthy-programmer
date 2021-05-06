@@ -96,7 +96,7 @@ def eye_start():
     i = 0
     while True:
         if time.localtime().tm_hour < 17:
-            if time.localtime().tm_min - start.tm_min == 3:
+            if time.localtime().tm_min - start.tm_min == 20:
                 eye = Image.open("eye.jpg")
                 eye.show()
                 if i==0:

@@ -97,7 +97,7 @@ def exercise_start():
     i=0
     while True:
         if time.localtime().tm_hour < 17:
-            if time.localtime().tm_min - start_exer.tm_min == 1:
+            if time.localtime().tm_min - start_exer.tm_min == 45:
                 exer = Image.open("exercise.png")
                 exer.show()
                 if i == 0:

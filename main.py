@@ -1,18 +1,18 @@
 # #Healthy programmer
 # 9am-5pm
 #
-# Water - water.mp3(assume it to be in this directory!) 3.5 litres water
+# Water - 3.5 litres water
 # you can generate any type of reminder and once user has finished drinking
 # and he presses enter he should be able to resume his job or you can
 # ask user a boolean question.
 # Also generate a log containing a timestamp that how much time did he take
 # for drinking water
 #
-# Eyes - eyes.mp3(Every 30 minutes)
+# Eyes rest(Every 20 minutes) 20-20-20 rule
 # Same  task over (Y/N) input at the end of each time
 #create log as well
 
-# Physical activity - physical.mp3(Every 45 minutes)
+# Physical activity (Every 45 minutes)
 # Here also you can take boolean task over input from user
 # create log as well
 
@@ -130,7 +130,7 @@ def water_start():
     i=0
     while True:
         if time.localtime().tm_hour < 17:
-            if time.localtime().tm_min - start.tm_min == 2:
+            if time.localtime().tm_min - start.tm_min == 30:
                 wat = Image.open("water.jpg")
                 wat.show()
                 if i==0:
